@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-Goit-Course
+# goit-markup-hw-01
+GoitCourse
