@@ -1,18 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <!--Stil normalleştirici olarak modern-normalize etkinleştirilmiş olmalıdır.-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site basligi</title>
+    <title>WebStudio</title>
 
+    <!-- Normalize -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
 
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet" />
@@ -21,164 +19,209 @@
   </head>
 
   <body>
-    <!--header -->
+    <!-- HEADER -->
     <header class="header">
-      <!--logo buraya text olarak gelecek-->
-      <a href="#" class="logo">Web<span>STUDIO</span></a>
-      <nav class="menu-nav">
-        <!--Metin iceren baglanti ile studio portfolio ve contacts girilmeli-->
-        <ul class="menu-link">
-          <li><a href="#" class="link">Studio</a></li>
-          <li><a href="#" class="link">Portfolio</a></li>
-          <li><a href="#" class="link">Contacts</a></li>
-        </ul>
-      </nav>
-      <!-- e posta ve telefon buraya gelecek nav disinda sirasiz liste olsun 
- -->
-      <address>
-        <a href="mailto:info@devstudio.com" class="contact-link"
-          >info@devstudio.com</a
-        >
-        <br />
-        <a href="tel:+110001111111" class="contact-link">+11(000) 111-11-11</a>
-      </address>
+      <div class="container header-container">
+        <nav class="menu-nav">
+          <a href="./index.html" class="logo"> Web<span>Studio</span> </a>
+
+          <ul class="menu-link">
+            <li><a href="#" class="link">Studio</a></li>
+            <li><a href="#" class="link">Portfolio</a></li>
+            <li><a href="#" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="contacts">
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-link">
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contact-link">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
-    <!--header is over -->
-    <!--main -->
+
+    <!-- MAIN -->
     <main>
-      <!-- hero image efekti burada olusturulacak-->
+      <!-- HERO -->
       <section class="hero">
-        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
-        <button type="button" class="button">Order Service</button>
+          <button type="button" class="button">Order Service</button>
+        </div>
       </section>
-      <!--Section 1 burada olusturulacak-->
-      <section>
-        <ul>
-          <li>
-            <h3 class="card-title">Strategy</h3>
-            <p class="card-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="card-title">Punctuality</h3>
-            <p class="card-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="card-title">Diligence</h3>
-            <p class="card-text">
-              Research and confirm brands with the strongest digital growth
-              opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="card-title">Technologies</h3>
-            <p class="card-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Section 2 burada olusturulacak-->
-      <section class="our-team">
-        <h2>Our Team</h2>
-        <!-- Team Pictures comes here-->
 
-        <ul>
-          <li>
-            <img
-              src="images/mark.jpg"
-              width="140"
-              alt="Mark Guerrero's Picture" />
-            <h3 class="card-title">Mark Guerrero</h3>
-            <p class="card-text">Product Designer</p>
-          </li>
-          <li>
-            <img src="images/tom.jpg" width="140" alt="Tom Ford's Picture" />
-            <h3 class="card-title">Tom Ford</h3>
-            <p class="card-text">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="images/camila.jpg"
-              width="140"
-              alt="Camila Garcia's Picture" />
-            <h3 class="card-title">Camila Garcia</h3>
-            <p class="card-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/daniel.jpg"
-              width="140"
-              alt="Daniel Wilson's Picture" />
-            <h3 class="card-title">Daniel Wilson</h3>
-            <p class="card-text">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-      <section class="our-portfolio">
-        <h2>Our Portfolio</h2>
-        <!-- Product Pictures comes here-->
+      <!-- FEATURES -->
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Features</h2>
 
-        <ul>
-          <li>
-            <img
-              src="images/banking.jpg"
-              width="140"
-              alt="Banking app picture" />
-            <h3 class="card-title">Banking App</h3>
-            <p class="card-text">App</p>
-          </li>
-          <li>
-            <img src="images/cashless.jpg" width="140" alt="payment Picture" />
-            <h3 class="card-title">Cashless Payment</h3>
-            <p class="card-text">Marketing</p>
-          </li>
-          <li>
-            <img src="images/meditation.jpg" width="140" alt="laptop Picture" />
-            <h3 class="card-title">Meditation App</h3>
-            <p class="card-text">App</p>
-          </li>
-          <li>
-            <img src="images/taxi.jpg" width="140" alt="taxi Picture" />
-            <h3 class="card-title">Taxi Service</h3>
-            <p class="card-text">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="images/screen.jpg"
-              width="140"
-              alt="phone screens Picture" />
-            <h3 class="card-title">Screen Illustrations</h3>
-            <p class="card-text">Design</p>
-          </li>
-          <li>
-            <img
-              src="images/online.jpg"
-              width="140"
-              alt="a woman is looking at her phone" />
-            <h3 class="card-title">Online Courses</h3>
-            <p class="card-text">Marketing</p>
-          </li>
-        </ul>
+          <ul class="features-list">
+            <li>
+              <h3 class="card-title">Strategy</h3>
+              <p class="card-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="card-title">Punctuality</h3>
+              <p class="card-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="card-title">Diligence</h3>
+              <p class="card-text">
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="card-title">Technologies</h3>
+              <p class="card-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="section our-team">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+
+          <ul class="team-list">
+            <li class="team-card">
+              <img src="images/mark.jpg" alt="Mark Guerrero" />
+
+              <div class="team-card-content">
+                <h3 class="card-title">Mark Guerrero</h3>
+                <p class="card-text">Product Designer</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <img src="images/tom.jpg" alt="Tom Ford" />
+
+              <div class="team-card-content">
+                <h3 class="card-title">Tom Ford</h3>
+                <p class="card-text">Frontend Developer</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <img src="images/camila.jpg" alt="Camila Garcia" />
+
+              <div class="team-card-content">
+                <h3 class="card-title">Camila Garcia</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <img src="images/daniel.jpg" alt="Daniel Wilson" />
+
+              <div class="team-card-content">
+                <h3 class="card-title">Daniel Wilson</h3>
+                <p class="card-text">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="section our-portfolio">
+        <div class="container">
+          <h2 class="section-title">Our Portfolio</h2>
+
+          <ul class="portfolio-list">
+            <li class="portfolio-card">
+              <img src="images/banking.jpg" alt="Banking App" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Banking App</h3>
+                <p class="card-text">App</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="images/cashless.jpg" alt="Cashless Payment" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Cashless Payment</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="images/meditation.jpg" alt="Meditation App" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Meditation App</h3>
+                <p class="card-text">App</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="images/taxi.jpg" alt="Taxi Service" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Taxi Service</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="images/screen.jpg" alt="Screen Illustrations" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Screen Illustrations</h3>
+                <p class="card-text">Design</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="images/online.jpg" alt="Online Courses" />
+
+              <div class="portfolio-card-content">
+                <h3 class="card-title">Online Courses</h3>
+                <p class="card-text">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <!--main ias over -->
 
-    <!--footer-->
-    <footer>
-      <a href="#" class="logo">Web<span>studio</span></a>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="logo footer-logo">
+          Web<span>Studio</span>
+        </a>
+
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
-    <!--footer is over -->
   </body>
 </html>
