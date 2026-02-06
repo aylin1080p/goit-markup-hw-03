@@ -131,7 +131,7 @@ img {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
-  line-height: 40px;
+  line-height: 24px;
 }
 
 .contact-link:hover,
@@ -152,7 +152,7 @@ img {
   margin: 0 auto 48px;
   font-size: 56px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 60px;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -162,7 +162,7 @@ img {
 .button {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -185,20 +185,20 @@ img {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 1.11;
+  line-height: 40px;
 }
 
 .card-title {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 24px;
   color: #2e2f42;
 }
 
 .card-text {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -289,5 +289,5 @@ img {
 .footer-text {
   max-width: 264px;
   color: #f4f4fd;
-  line-height: 1.5;
+  line-height: 24px;
 }
